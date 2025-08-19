@@ -1,0 +1,70 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: system-ui;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e2e8f0;
+}
+.title {
+    color: #1e293b;
+    font-size: 2rem;
+    margin: 0;
+}
+.status {
+    padding: 8px 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+.statusText {
+    font-weight: 600;
+    color: #059669;
+}
+.main {
+    display: grid;
+    gap: 32px;
+}
+.section {
+    background: white;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba (0, 0, 0, 0.1);
+}
+.section h2{
+    margin-top: 0;
+    color: 374151;
+    font-size: 1.5rem;
+}
+.emptyState {
+    color: #6b7280;
+    font-style: italic;
+}
+.assetList {
+    display: grid;
+    grid-template-columns: repeat (auto-fill, minmax(300px, 1fr));
+}
+.assetCard {
+    padding: 16px;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+.assetCard h3 {
+    margin: 0 0 12px 0;
+    color: #111827;
+    font-size: 1.1rem;
+}
+.assetCard p {
+    margin: 4px 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
