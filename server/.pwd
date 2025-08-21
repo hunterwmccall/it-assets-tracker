@@ -1,0 +1,8 @@
+NODE ENV=development
+PORT=3001
+PGHOST=localhost
+PGPORT=5432
+PGDATABASE=it_assets_dev
+PGUSER=postgres
+PGPASSWORD=postgres
+DB_SYNC=true

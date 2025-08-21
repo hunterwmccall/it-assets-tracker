@@ -1,0 +1,207 @@
+.form {
+    background:white;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.form h3{
+    margin-top: 0;
+    color: #374151;
+    font-size: 1.25rem;
+    margin-bottom:20px;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.field label {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.field input
+.field select
+.field textarea {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+border-radius: 4px;
+font-size: 0.9rem;
+transition: border-color 0.2s;
+}
+.field input:focus,
+
+.field select:focus,
+.field textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+.field textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+.submitBtn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.submitBtn:hover:not(:disabled) {
+    background: #2563eb;
+}
+.submitBtn:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+}
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.assetCard {
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  position: relative;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.editBtn:hover {
+  background: #e5e7eb;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.cardContent p {
+  margin: 4px 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.timestamp {
+  color: #6b7280 !important;
+  font-size: 0.8rem !important;
+  margin-top: 8px !important;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editInput {
+  padding: 6px 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.editInput:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.editActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.saveBtn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.saveBtn:hover {
+  background: #2563eb;
+}
+
+.cancelBtn {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.cancelBtn:hover {
+  background: #4b5563;
+}
+
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}

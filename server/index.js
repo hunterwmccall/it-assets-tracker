@@ -33,7 +33,7 @@ if (process.env.DB_SYNC ==='true') {
 }
 
 app.listen(PORT, () => {
-    console.log('Server running on https://localhost:${PORT}');
+    console.log(`Server running on https://localhost:${PORT}`);
 });
 } catch (error) {
     console.error('Unable to start server:', error);
